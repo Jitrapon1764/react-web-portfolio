@@ -1,12 +1,12 @@
 import React from 'react';
+import Home from './home/home'
+import './app.style.sass';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <p>
-          hi Game world
-        </p>
+        <Home></Home>
       </header>
     </div>
   );
