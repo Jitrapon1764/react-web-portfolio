@@ -1,0 +1,48 @@
+$hight_nav:5rem;
+
+#nav-brand {
+    font-family: 'Chonburi', cursive;
+    font-size: 2rem;
+}
+
+#nav-item {
+    font-family: 'Manjari', cursive;
+    font-size: 2rem;
+}
+
+
+
+.nav-light {
+    background-color: transparent;
+
+    #nav-item,
+    #nav-brand {
+        color: white;
+    }
+
+    #nav-item.active {
+        color: green;
+    }
+}
+
+.nav-dark {
+    background-color: rgb(238, 238, 238);
+    box-shadow: 0 4px 2px -2px rgba(0, 0, 0, .2);
+
+    #nav-item,
+    #nav-brand {
+        color: black;
+    }
+    
+    #nav-item.active {
+        color: green;
+    }
+}
+
+
+.transition {
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}

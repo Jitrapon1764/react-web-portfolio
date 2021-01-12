@@ -1,12 +1,12 @@
 import React from "react";
-import { Button } from 'react-bootstrap';
-
+import topViewBG from "../pic/bg2.png";
+// import { Container } from "react-bootstrap";
 function Home() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <Button>click</Button>
-      </header>
+    <div id="_home">
+      <div id="home">
+        <img src={topViewBG} alt="top-view" id="top-view-bg"/>
+      </div>
     </div>
   );
 }
