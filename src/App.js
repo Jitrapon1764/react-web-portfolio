@@ -1,29 +1,29 @@
-import React, {  Fragment } from "react";
+import React from "react";
 import Bar from "./home/bar";
 import Home from "./home/home";
+import AboutMe from "./aboutMe/aboutMe";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import "./app.style.scss";
-import { BrowserRouter as Router, Route } from "react-router-dom";
-import { withRouter } from "react-router";
 
-function App() {
-  const HeaderWithRouter = withRouter(Bar);
-
-  return (
-    // <div className="App">
-    //   <header className="App-header">
-    //     <Bar></Bar>
-    //     <Home></Home>
-    //   </header>
-    // </div>
-    <div className="App">
-      <Router>
-        <Fragment>
-          <HeaderWithRouter />
-          <Route path="/" exact component={Home} />
-        </Fragment>
-      </Router>
-    </div>
-  );
+class App extends React.Component {
+  render() {
+    return (
+      // <div className="App">
+      //     <Bar></Bar>
+      //     <Home></Home>
+      //     <AboutMe></AboutMe>
+      // </div>
+      <div className="App">
+        <Bar></Bar>
+        <Router>
+          <Switch>
+            <Route path="/" component={[Home,AboutMe]} />
+            {/* <Route path="/aboutMe" component={AboutMe} /> */}
+          </Switch>
+        </Router>
+      </div>
+    );
+  }
 }
 
 export default App;

@@ -7,7 +7,7 @@ $hight_nav:5rem;
 
 #nav-item {
     font-family: 'Manjari', cursive;
-    font-size: 2rem;
+    font-size: 1rem;
 }
 
 
@@ -21,7 +21,8 @@ $hight_nav:5rem;
     }
 
     #nav-item.active {
-        color: green;
+        color: rgb(121, 255, 121);
+        font-weight: 700;
     }
 }
 
@@ -35,7 +36,8 @@ $hight_nav:5rem;
     }
     
     #nav-item.active {
-        color: green;
+        color: rgb(121, 255, 121);
+        font-weight: 700;
     }
 }
 

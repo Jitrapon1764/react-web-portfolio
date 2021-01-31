@@ -1,8 +1,13 @@
 @import "~bootstrap/scss/bootstrap";
 @import "./home/style/bar.style.scss";
 @import "./home/style/home.style.scss";
+@import "./aboutMe/style/aboutMe.scss";
+@import "./aboutMe/style/card.scss";
 
-// Chonburi
+
+// font
 @import url('https://fonts.googleapis.com/css2?family=Chonburi&display=swap');
-// Manjari
 @import url('https://fonts.googleapis.com/css2?family=Manjari:wght@100;400;700&display=swap');
+
+//constant
+$nav-hight:5rem;

@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { Navbar, Nav } from "react-bootstrap";
 
 function Bar(props) {
-  const { location } = props;
   const [navBar, setNavBar] = useState(false);
 
   const changeNavBackground = () => {
@@ -12,9 +11,9 @@ function Bar(props) {
       setNavBar(false);
     }
   };
+
   window.addEventListener("scroll", changeNavBackground);
 
-  // const navActive = 
   return (
     <div id="_nav">
       <Navbar
@@ -29,12 +28,12 @@ function Bar(props) {
         </Navbar.Brand>
 
         <Navbar.Collapse id="responsive-navbar">
-          <Nav className="ml-auto" activeKey={location.pathname}>
-            <Nav.Link id="nav-item" href="/" >
+          <Nav className="ml-auto">
+            <Nav.Link id="nav-item" href="#_home">
               Home
             </Nav.Link>
-            <Nav.Link id="nav-item" href="#">
-              Product
+            <Nav.Link id="nav-item" href="#_aboutMe">
+              About Me
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>

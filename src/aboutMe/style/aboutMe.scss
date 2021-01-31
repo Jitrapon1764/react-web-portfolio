@@ -1,0 +1,41 @@
+@import "../../constant.scss";
+
+#_aboutMe {
+    position: relative;
+    height: 5000px;
+}
+
+#aboutMe {
+    padding-top: $nav-hight;
+}
+
+#aboutMe-text {
+    font-family: 'Manjari', cursive;
+    text-align: center;
+
+    #header {
+        font-weight: 700;
+        font-size: 1.3rem;
+    }
+
+    #text {
+        word-wrap: break-word;
+    }
+
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+    #aboutMe-text {
+        text-align: right;
+    }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {}
